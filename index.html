@@ -195,11 +195,14 @@
   }
 
   .special-photo img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
-    filter: brightness(0.95);
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+  display: block;
+  background: rgba(0,0,0,0.35);
+  padding: 10px;
+  filter: brightness(0.98);
   }
 
   .special-text {
