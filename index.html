@@ -181,52 +181,55 @@
   }
 
   /* ---------------------------
-     FOTO ESPECIAL (NUEVO)
-  ----------------------------*/
+   FOTO ESPECIAL (ARREGLADO)
+----------------------------*/
 
-  .special-photo {
-    margin-top: 20px;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid rgba(255, 105, 180, 0.6);
-    box-shadow: 0 0 50px rgba(255, 0, 150, 0.25);
-    animation: glow 3s infinite ease-in-out;
-  }
+.special-photo {
+  margin-top: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid rgba(255, 105, 180, 0.6);
+  box-shadow: 0 0 50px rgba(255, 0, 150, 0.25);
+  animation: glow 3s infinite ease-in-out;
 
-  .special-photo img {
+  background: rgba(0,0,0,0.35);
+  padding: 12px;
+}
+
+.special-photo img {
   width: 100%;
   height: auto;
   max-height: 650px;
   object-fit: contain;
   display: block;
-  background: rgba(0,0,0,0.35);
-  padding: 10px;
-  filter: brightness(0.98);
-  }
+  border-radius: 18px;
+}
 
-  .special-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.05rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
-    color: #ffd6f3;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 0.5px;
-  }
+.special-text {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  color: #ffd6f3;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
+  border-radius: 18px;
+}
 
-  @keyframes glow {
-    0%, 100% {
-      box-shadow: 0 0 35px rgba(255, 0, 150, 0.25);
-    }
-    50% {
-      box-shadow: 0 0 70px rgba(255, 0, 150, 0.45);
-    }
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 35px rgba(255, 0, 150, 0.25);
   }
+  50% {
+    box-shadow: 0 0 70px rgba(255, 0, 150, 0.45);
+  }
+}
 </style> 
 </head>
 <body>
