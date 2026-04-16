@@ -5,179 +5,226 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Para Ti ❤️</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: "Poppins", sans-serif;
-      background: radial-gradient(circle at top, #1a0f1d, #0a0610);
-      color: white;
-      overflow-x: hidden;
-    }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    .stars {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: transparent;
-      z-index: -2;
-    }
+  body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at top, #1a0f1d, #0a0610);
+    color: white;
+    overflow-x: hidden;
+  }
 
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: rgba(255,255,255,0.8);
-      border-radius: 50%;
-      animation: twinkle 3s infinite ease-in-out;
-    }
+  .stars {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: transparent;
+    z-index: -2;
+  }
 
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.3; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.6); }
-    }
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out;
+  }
 
-    header {
-      text-align: center;
-      padding: 80px 20px 40px;
-    }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.6); }
+  }
 
-    header h1 {
-      font-family: "Playfair Display", serif;
-      font-size: 2.5rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-    }
+  header {
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
 
-    header p {
-      opacity: 0.8;
-      font-size: 1rem;
-      max-width: 650px;
-      margin: auto;
-      line-height: 1.6;
-    }
+  header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
 
-    .card {
-      width: 90%;
-      max-width: 900px;
-      margin: 25px auto;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 22px;
-      padding: 30px;
-      box-shadow: 0 0 40px rgba(255, 0, 150, 0.1);
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s ease;
-    }
+  header p {
+    opacity: 0.8;
+    font-size: 1rem;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+  }
 
-    .card:hover {
-      transform: translateY(-4px);
-    }
+  .card {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(255, 0, 150, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+  }
 
-    .title {
-      font-family: "Playfair Display", serif;
-      font-size: 1.6rem;
-      margin-bottom: 12px;
-    }
+  .card:hover {
+    transform: translateY(-4px);
+  }
 
-    .text {
-      opacity: 0.92;
-      line-height: 1.9;
-      font-size: 1rem;
-      white-space: pre-line;
-    }
+  .title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
 
-    .btn {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 12px 20px;
-      border-radius: 14px;
-      background: linear-gradient(90deg, #ff2f8a, #ff6fd8);
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
+  .text {
+    opacity: 0.92;
+    line-height: 1.9;
+    font-size: 1rem;
+    white-space: pre-line;
+  }
 
-    .btn:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
-    }
+  .btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #ff2f8a, #ff6fd8);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
 
-    .hidden {
-      display: none;
-      margin-top: 18px;
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(0,0,0,0.35);
-      border: 1px solid rgba(255,255,255,0.1);
-      animation: fadeIn 0.8s ease;
-    }
+  .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0px); }
-    }
+  .hidden {
+    display: none;
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: fadeIn 0.8s ease;
+  }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0px); }
+  }
 
-    .photo {
-      width: 100%;
-      height: 280px;
-      border-radius: 20px;
-      overflow: hidden;
-      position: relative;
-      border: 1px solid rgba(255,255,255,0.15);
-      background: rgba(255,255,255,0.05);
-      box-shadow: 0 0 25px rgba(255, 0, 120, 0.12);
-      transition: transform 0.3s ease;
-    }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+  }
 
-    .photo:hover {
-      transform: scale(1.03);
-    }
+  .photo {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 25px rgba(255, 0, 120, 0.12);
+    transition: transform 0.3s ease;
+  }
 
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.95;
-    }
+  .photo:hover {
+    transform: scale(1.03);
+  }
 
-    .footer {
-      text-align: center;
-      padding: 60px 20px 80px;
-      opacity: 0.8;
-      font-size: 0.95rem;
-    }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.95;
+  }
 
-    .heart {
-      position: fixed;
-      font-size: 18px;
-      animation: floatUp 4s linear forwards;
-      opacity: 0.8;
-      z-index: -1;
-    }
+  .footer {
+    text-align: center;
+    padding: 60px 20px 80px;
+    opacity: 0.8;
+    font-size: 0.95rem;
+  }
 
-    @keyframes floatUp {
-      0% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(-900px); opacity: 0; }
-    }
+  .heart {
+    position: fixed;
+    font-size: 18px;
+    animation: floatUp 4s linear forwards;
+    opacity: 0.8;
+    z-index: -1;
+  }
 
-    .counter {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-top: 12px;
-      color: #ffb6f0;
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-900px); opacity: 0; }
+  }
+
+  .counter {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #ffb6f0;
+  }
+
+  /* ---------------------------
+     FOTO ESPECIAL (NUEVO)
+  ----------------------------*/
+
+  .special-photo {
+    margin-top: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(255, 105, 180, 0.6);
+    box-shadow: 0 0 50px rgba(255, 0, 150, 0.25);
+    animation: glow 3s infinite ease-in-out;
+  }
+
+  .special-photo img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.95);
+  }
+
+  .special-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    color: #ffd6f3;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.5px;
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 35px rgba(255, 0, 150, 0.25);
     }
-  </style>
+    50% {
+      box-shadow: 0 0 70px rgba(255, 0, 150, 0.45);
+    }
+  }
+</style> 
 </head>
 <body>
 
@@ -193,26 +240,24 @@
 </header>
 
 <section class="card">
-  <div class="title">🌙 Mi amor…</div>
+  <div class="title">✨ La foto que lo dice todo</div>
   <div class="text">
-Hoy quiero hacer algo diferente…
-algo que no se compra, que no se encuentra fácil, y que solo existe porque tú existes en mi vida.
+Hay una foto que para mí vale más que mil…
+porque cuando la miro, no veo solo una imagen.
 
-Si alguien me preguntara qué es lo que más me gusta de ti,
-yo no sabría por dónde empezar…
-porque contigo todo se siente real:
-tu mirada, tu voz, tu forma de estar…
-y hasta tus silencios.
+Veo a la mujer que me cambió la vida.
+Veo a la niña que me hace sonreír sin darme cuenta.
+Veo a mi persona favorita.
 
-Hoy cumplimos 6 meses…
-y suena como poco para el mundo,
-pero para mí es suficiente para decirte algo con total seguridad:
-
-Contigo quiero seguir.
-
-Porque tú no eres solo mi novia…
-tú eres mi lugar favorito.
+Y si alguien me preguntara por qué te amo…
+yo simplemente le mostraría esta foto.
   </div>
+
+  <div class="special-photo">
+    <img src="foto_especial.jpg" alt="Mi amor">
+    <div class="special-text">Eres mi lugar seguro ❤️</div>
+  </div>
+</section>
 
   <button class="btn" onclick="showMessage()">💌 Toca aquí</button>
 
@@ -362,7 +407,7 @@ Te amo más de lo que mis palabras pueden explicar. ❤️
   }, 700);
 
   // contador de días juntos (CAMBIA ESTA FECHA)
-  const startDate = new Date("2025-10-15"); // <-- CAMBIA AQUÍ
+  const startDate = new Date("2025-10-16"); // <-- CAMBIA AQUÍ
   const today = new Date();
   const diffTime = Math.abs(today - startDate);
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
